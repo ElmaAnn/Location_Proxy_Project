@@ -1,0 +1,12 @@
+{
+  "/maps/api/*": {
+    "target": "http://localhost:3070",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/maps/api/settings": "/maps/api/app/settings",
+      "^/maps/api": ""
+    }
+  }
+}
